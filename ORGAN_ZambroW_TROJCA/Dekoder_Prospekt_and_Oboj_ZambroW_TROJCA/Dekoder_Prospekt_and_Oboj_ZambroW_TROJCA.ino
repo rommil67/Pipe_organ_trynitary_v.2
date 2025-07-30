@@ -7,8 +7,11 @@
 //#define LED 13 
 //#define LED2 12// Arduino Board LED is on Pin 13
 
-#define decoder_channel 2 // the selected MIDI channel on which the decoder works
-int pins[] = {A14, A15, A12, A13, A10, A11, A8, A9, A6, A7, A4, A5, A2, A3, A0, A1,   46, 47, 44, 45, 42, 43, 40, 41, 38, 39, 36, 37, 34, 35, 32, 33,    3, 2, 5, 4, 7, 6, 9, 8, 11, 10, 13, 12, 15, 14, 17, 16,     19, 18, 21, 20, 23, 22, 25, 24, 27, 26, 29, 28, 31, 30};
+#define decoder_channel 3 // the selected MIDI channel on which the decoder works 
+// zmieniono kanał z 2 na 3 ze wzgldu na to że obój jest w II manuale
+//int pins[] = {A14, A15, A12, A13, A10, A11, A8, A9, A6, A7, A4, A5, A2, A3, A0, A1,   46, 47, 44, 45, 42, 43, 40, 41, 38, 39, 36, 37, 34, 35, 32, 33,    3, 2, 5, 4, 7, 6, 9, 8, 11, 10, 13, 12, 15, 14, 17, 16,     19, 18, 21, 20, 23, 22, 25, 24, 27, 26, 29, 28, 31, 30};
+int pins[] = {A14, 3, A15, 2, A12, 5, A13, 4, A10, 7, A11, 6, A8, 9, A9, 8, A6, 11, A7, 10, A4, 13, A5, 12, A2, 15, A3, 14, A0, 17, A1, 16,     46, 19, 47, 18, 44, 21, 45, 20, 42, 23, 43, 22, 40, 25, 41, 24, 38, 27, 39, 26, 36, 29, 37, 28, 34, 31, 35, 30, 32, 33};
+// poprawka naniesiona dn.29 lipca 2025 po montażu oboju podzielonego na strony C i Cis
 int remaining_pins[] = {48,49,50}; // unused pins
 
 // for I manuału tak:
